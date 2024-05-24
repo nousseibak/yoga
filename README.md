@@ -74,6 +74,7 @@ Pour le front:
 - Lancer les tests: > npm run test
 - En cas de modification des tests, pour suivre les modifs: > npm run test:watch
 - Générer le rapport de couverture: npm test -- --coverage
+- Le rapport se trouve dans le dossier: front/coverage/jest/lcov-report/index.html
 
 
 Pour le back:
