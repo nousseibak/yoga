@@ -30,13 +30,9 @@ Tests Front:
 
 ## Installer le projet
 
-- Cloner le projet :
-> git clone https://github.com/nousseibak/yoga.git
-
+- Cloner le projet : > git clone https://github.com/nousseibak/yoga.git
 - Ouvrir MySql, créer la table yoga
 - Insérer les données dans cette table avec le script qui se trouve dans : `ressources/sql/script.sql`
-
-
 - Dans Postman, importer la collection qui se trouve ici:  ressources/postman/yoga.postman_collection.json
 
 
@@ -45,9 +41,7 @@ Tests Front:
 Pour le front, ouvrir le dossier front :
 
 - Installer les dépendences avec: > npm install
-
 - Lancer le Front-end: > npm run start;
-
 
 Pour le Back, ouvrir le dossier back :
 
@@ -69,9 +63,7 @@ Compte admin par défaut pour tester l'application :
 #### E2E
 
 - Lancer les tests e2e : > npm run e2e
-
 - Generer le coverage report (lancer les tests e2e d'abord): > npm run e2e:coverage
-
 - Le rapport est disponible ici : > front/coverage/lcov-report/index.html
 
 #### Tests Unitaires
@@ -79,9 +71,7 @@ Compte admin par défaut pour tester l'application :
 Pour le front: 
 
 - Lancer les tests: > npm run test
-
 - En cas de modification des tests, pour suivre les modifs: > npm run test:watch
-
 - Générer le rapport de couverture: npm test -- --coverage
 
 
