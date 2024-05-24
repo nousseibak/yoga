@@ -89,24 +89,7 @@ describe('LoginComponent', () => {
   });
 
 
-//   it('should submit the login form with valid credentials', () => {
-//     jest.spyOn(router, 'navigate').mockImplementation();
 
-//     // Définir des valeurs de formulaire valides
-//     const validFormData = {
-//       email: 'yoga@studio.com',
-//       password: 'test!1234'
-//     };
-  
-//     // Simuler la soumission du formulaire
-//     component.form.setValue(validFormData);
-
-//     component.submit();
-
-//     //expect(component.form.valid).toBeTruthy;
-//     //expect(component.onError).toBe(false);
-//     expect(router.navigate).toHaveBeenCalledWith(['/sessions']);
-// });
 
 test('should call sessionService and redirect user on login success', () => {
   mockAuthService.login.mockReturnValue(of(mockSessionData));
@@ -116,72 +99,6 @@ test('should call sessionService and redirect user on login success', () => {
   expect(mockRouter.navigate).toHaveBeenCalledWith(['/sessions']);
 });
 
-// it('should submit the login form with valid credentials', async() => {
-// jest.spyOn(router, 'navigate').mockImplementation();
-//     emailInput.value = 'test@test.com';
-//     emailInput.dispatchEvent(new Event('input'));
-//     passwordInput.value = 'test!123';
-//     passwordInput.dispatchEvent(new Event('input'));
-//     loginForm.triggerEventHandler('ngSubmit', null);
-//     await fixture.whenStable();
-//     fixture.detectChanges();
-//     const req = httpTestingController.expectOne('api/auth/login');
-//     req.flush({
-//       token: 'token',
-//       type: 'userSession',
-//       id: 1,
-//       username: 'username',
-//       firstName: 'firstname',
-//       lastName: 'lastname',
-//       admin: false
-//     });
-//     expect(component.form.valid).toBeTruthy();
-//     expect(sessionService.isLogged).toBeTruthy();
-//     expect(sessionService.sessionInformation?.token).toBe('token');
-//     expect(component.onError).toBeFalsy();
-//     expect(router.navigate).toHaveBeenCalledWith(['/sessions']);
-//     // After every test, assert that there are no more pending requests.
-//     httpTestingController.verify();
-//   });
-  
-  
-  // it('should display an error message when form fields are empty', () => {
-  //   // Simulate form submission without filling required fields
-  //   component.submit();
 
-  //   // Expect onError to be true after form submission
-  //   expect(component.onError).toBe(true);
-
-  //   // Trigger change detection to update the view
-  //   fixture.detectChanges();
-
-  //   // Check if the error message is displayed in the DOM
-  //   const errorMessage = fixture.nativeElement.querySelector('.error');
-  //   expect(errorMessage.textContent).toContain('An error occurred');
-  // });
-
-  // it('should display an error message on invalid credentials', () => {
-  //   const invalidFormData = {
-  //     email: 'test@example.com',
-  //     password: 'invalid'
-  //   };
-  
-  //   // Créer un espion sur authService.login avec un retour d'informations de session simulées
-  //   const sessionInfo: SessionInformation = {
-  //     token: 'token_value',
-  //     type: 'user',
-  //     id: 1234,
-  //     username: 'username',
-  //     firstName: 'firstname',
-  //     lastName: 'lastname',
-  //     admin: true
-  //   };
-
-  //   component.form.setValue(invalidFormData);
-  //   component.submit();
-
-  //   expect(component.onError).toBe(true);
-
-  // });
   
 });

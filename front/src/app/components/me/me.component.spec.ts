@@ -118,16 +118,7 @@ describe('MeComponent', () => {
     expect(foundEmail).toBeTruthy();
   });
 
-  // it('should call delete() method on button click', () => {
-  //   const deleteSpy = jest.spyOn(component, 'delete');
-  //   component.user = {  id:1, password:'test1234!',firstName: 'John', lastName: 'Doe', email: 'john.doe@example.com', admin: false, createdAt: new Date(), updatedAt: new Date() };
-  //   fixture.detectChanges();
-  //   const button = fixture.nativeElement.querySelector('button');
-  //   expect(button).toBeTruthy();
-  //   button.click();
-  //   fixture.detectChanges();
-  //   expect(deleteSpy).toHaveBeenCalled();
-  // });
+
 
   it('should delete user account and navigate to home', () => {
     const deleteSpy = jest.spyOn(component, 'delete');

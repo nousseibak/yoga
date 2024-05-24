@@ -94,25 +94,5 @@ describe('RegisterComponent', () => {
   });
 
 
-  // it('should not submit with invalid form data', () => {
-  //   const registerSpy = jest.spyOn(authService, 'register').mockReturnValue(of(undefined));
 
-  //   // Set invalid form values (missing required fields)
-  //   component.form.setValue({
-  //     firstName: '', // Invalid: required field
-  //     lastName: 'Doe',
-  //     email: 'john.doe@example.com',
-  //     password: 'password123'
-  //   });
-
-  //   expect(component.form.valid).toBeFalsy();
-
-
-  //  // Simulate form submission
-  //  component.submit();
-
-  //   expect(registerSpy).not.toHaveBeenCalled(); // Register method should not be called
-
-  //   expect(component.onError).toBe(true);
-  // });
 });

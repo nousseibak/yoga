@@ -81,7 +81,7 @@ describe('DetailComponent', () => {
     // After ngOnInit, session and teacher should be initialized
     expect(component.session).toEqual(mockSession);
     expect(component.isParticipate).toBe(true); // Assuming user ID 1 is in the list of users
-    // Add expectations for teacher initialization if needed
+
   });
 
   it('should delete the session and navigate after deletion', () => {
@@ -100,11 +100,8 @@ describe('DetailComponent', () => {
     // Verify that matSnackBar.open and router.navigate are called appropriately
     expect(mockSnackBar.open).toHaveBeenCalledWith('Session deleted !', 'Close', { duration: 3000 });
 
-
-
     // Vérifier que la méthode navigate a été appelée avec ['/']
     expect(routerNavigateSpy).toHaveBeenCalledWith(['sessions']);
   });
 
-  // Add more test cases for other component methods as needed
 });
