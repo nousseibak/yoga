@@ -54,6 +54,9 @@ Pour le Back, ouvrir le dossier back :
 - Installer les dépendances : > mvn clean install
 - Lancer le projet
 
+Pour tester les fonctionnalités de l'application:
+
+-Ouvrir un navigateur et aller à l'adresse : http://localhost:4200/
 
 Compte admin par défaut pour tester l'application :
 - login: yoga@studio.com
