@@ -60,7 +60,7 @@ Compte admin par défaut pour tester l'application :
 - password: test!1234
 
 
-### Tests
+## Tests
 
 #### E2E
 
@@ -80,9 +80,8 @@ Pour le front:
 
 - Générer le rapport de couverture: npm test -- --coverage
 
-------
 
 Pour le back:
 
-- Lancer les tests: mvn clean test
+- Lancer les tests: mvn  test
 
