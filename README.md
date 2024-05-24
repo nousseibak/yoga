@@ -13,6 +13,7 @@ Objectif: créer des tests unitaires, d'intégration et end-to-end pour cette ap
 Tests Back:
 - JUnit
 - Mockito
+- Jacoco
 
 Tests Front:
 - Cypress
