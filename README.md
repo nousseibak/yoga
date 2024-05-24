@@ -36,7 +36,7 @@ Tests Front:
 - Insérer les données dans cette table avec le script qui se trouve dans : `ressources/sql/script.sql`
 
 
-- Dans Postman, importer la collectionquis se trouve ici:  ressources/postman/yoga.postman_collection.json
+- Dans Postman, importer la collection qui se trouve ici:  ressources/postman/yoga.postman_collection.json
 
 
 ## Démarrer le projet
