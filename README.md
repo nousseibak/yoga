@@ -33,7 +33,7 @@ Tests Front:
 > git clone https://github.com/nousseibak/yoga.git
 
 - Ouvrir MySql, créer la table yoga
--Insérer les données dans cette table avec le script qui se trouve dans : `ressources/sql/script.sql`
+- Insérer les données dans cette table avec le script qui se trouve dans : `ressources/sql/script.sql`
 
 
 - Dans Postman, importer la collectionquis se trouve ici:  ressources/postman/yoga.postman_collection.json
