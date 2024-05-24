@@ -1,7 +1,5 @@
-# Yoga App !
+# Yoga App
 
-
-For launch and generate the jacoco code coverage:
+Pour lancer l'application et générer le code coverage avec Jacoco:
 > mvn clean test
 
-GL
