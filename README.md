@@ -77,5 +77,6 @@ Pour le front:
 
 Pour le back:
 
-- Lancer les tests: mvn  test
+- Lancer les tests: mvn  clean test
+- Le rapport généré avec jacoco se trouve dans le dossier: target/site/jacoco/index.html
 
