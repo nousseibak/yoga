@@ -63,8 +63,7 @@ Compte admin par défaut pour tester l'application :
 #### E2E
 
 - Lancer les tests e2e : > npm run e2e
-Cypress s'ouvre, choisir un navigateur et lancer le fichier all.cy.ts
-
+- Cypress s'ouvre, choisir un navigateur et lancer le fichier all.cy.ts
 - Generer le coverage report (lancer les tests e2e d'abord): > npm run e2e:coverage
 - Le rapport est disponible ici : > front/coverage/lcov-report/index.html
 
