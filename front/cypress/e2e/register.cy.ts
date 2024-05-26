@@ -24,7 +24,7 @@ it('Soumet avec succès le formulaire d\'enregistrement', () => {
     cy.get('input[formControlName=firstName]').type(faker.person.firstName());
     cy.get('input[formControlName=lastName]').type(faker.person.lastName());
     cy.get('input[formControlName=email]').type("test@gmail.com");
-    cy.get('input[formControlName=password]').type(faker.internet.password());
+    cy.get('input[formControlName=password]').type(`${"test!1234"}`);
 
 
     cy.get('button[type="submit"]').click();

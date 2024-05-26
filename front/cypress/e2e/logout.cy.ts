@@ -19,7 +19,6 @@ describe('Logout', () => {
             {
                 method: 'GET',
                 url: '/api/session',
-
             },
             []).as('session')
             

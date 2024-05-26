@@ -20,7 +20,7 @@ public class UserController {
 
 
     public UserController(UserService userService,
-                             UserMapper userMapper) {
+                          UserMapper userMapper) {
         this.userMapper = userMapper;
         this.userService = userService;
     }
@@ -51,7 +51,7 @@ public class UserController {
 
             UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 
-            if(!Objects.equals(userDetails.getUsername(), user.getEmail())) {
+            if (!Objects.equals(userDetails.getUsername(), user.getEmail())) {
                 return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
             }
 
