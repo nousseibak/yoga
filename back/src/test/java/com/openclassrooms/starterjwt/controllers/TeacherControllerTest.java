@@ -1,6 +1,5 @@
 package com.openclassrooms.starterjwt.controllers;
 
-import com.openclassrooms.starterjwt.services.TeacherService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -20,9 +19,6 @@ public class TeacherControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
-
-    @Autowired
-    private TeacherService teacherService;
 
     @Test
     @WithMockUser(username = "test@example.com") // Simulate logged in user

@@ -2,12 +2,6 @@
 package com.openclassrooms.starterjwt.controllers;
 
 import com.openclassrooms.starterjwt.dto.SessionDto;
-import com.openclassrooms.starterjwt.mapper.SessionMapper;
-import com.openclassrooms.starterjwt.models.Session;
-import com.openclassrooms.starterjwt.models.Teacher;
-import com.openclassrooms.starterjwt.models.User;
-import com.openclassrooms.starterjwt.services.SessionService;
-import com.openclassrooms.starterjwt.services.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,32 +31,12 @@ public class SessionControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
-    @Autowired
-    private SessionService sessionService;
-
-    @Autowired
-    private UserService userService;
-
-    @Autowired
-    private SessionMapper sessionMapper;
-
     private Date fixedDate = new Date(1234567890123L);
 
-    private java.util.List<User> userList = new ArrayList<User>();
-    private Session session;
     private SessionDto sessionDto;
 
     @BeforeEach
     public void setup() {
-        userList.add(userService.findById(1L));
-        userList.add(userService.findById(2L));
-        session = new Session();
-        session.setId(1L);
-        session.setDate(fixedDate);
-        session.setDescription("description");
-        session.setName("name");
-        session.setTeacher(new Teacher());
-        session.setUsers(userList);
         sessionDto = new SessionDto();
         sessionDto.setId(1L);
         sessionDto.setDate(fixedDate);
